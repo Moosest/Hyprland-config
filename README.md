@@ -2,8 +2,6 @@
 
 A minimal, dark-themed configuration for Hyprland and Waybar.
 
-![Screenshot](docs/screenshots/desktop.png)
-
 ## Structure
 ```
 ~/.config/
