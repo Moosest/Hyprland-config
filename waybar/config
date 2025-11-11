@@ -1,0 +1,65 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 28,
+
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": [],
+  "modules-right": [
+    "network",
+    "bluetooth",
+    "cpu",
+    "battery",
+    "pulseaudio",
+    "clock",
+    "custom/logout"
+  ],
+
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "format": "{name}",
+    "all-outputs": true,
+    "active-only": false,
+    "persistent-workspaces": {
+      "*": [1, 2, 3, 4, 5]
+    }
+  },
+
+  "network": {
+    "format-wifi": " {essid}",
+    "format-ethernet": " {ipaddr}",
+    "format-disconnected": " Disconnected",
+    "on-click": "nm-connection-editor"
+  },
+
+  "bluetooth": {
+    "format": " {status}",
+    "format-disabled": " Off",
+    "on-click": "blueman-manager"
+  },
+
+  "cpu": {
+    "format": " {usage}%"
+  },
+
+  "battery": {
+    "format": " {capacity}%",
+    "format-charging": "⚡ {capacity}%"
+  },
+
+  "pulseaudio": {
+    "format": " {volume}%",
+    "format-muted": " Muted"
+  },
+
+  "clock": {
+    "format": "{:%H:%M}",                  // Shows 24h time like 14:32
+    "tooltip-format": "{:%A, %d %B %Y}",   // Hover shows full date
+    "interval": 1
+  },
+
+  "custom/logout": {
+    "format": "",
+    "on-click": "hyprctl dispatch exit"
+  }
+}

@@ -1,0 +1,29 @@
+* {
+  font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", monospace;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+window#waybar {
+  background: #1e1e1e;
+}
+
+#workspaces button {
+  padding: 0 8px;
+  color: #aaaaaa;
+}
+
+#workspaces button.active {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#battery,
+#cpu,
+#clock,
+#network,
+#bluetooth,
+#pulseaudio,
+#custom-logout {
+  padding: 0 10px;
+}
