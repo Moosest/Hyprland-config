@@ -9,6 +9,7 @@
     "network",
     "bluetooth",
     "cpu",
+    "temperature",
     "battery",
     "pulseaudio",
     "clock",
@@ -40,6 +41,12 @@
 
   "cpu": {
     "format": " {usage}%"
+  },
+
+  "temperature": {
+    "thermal-zone": 0, // Try different numbers (0, 1, 2, etc.) until you find the CPU temp.
+    "format": " {temperatureC}°C",
+    "critical-threshold": 80
   },
 
   "battery": {
