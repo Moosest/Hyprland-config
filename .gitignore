@@ -1,0 +1,16 @@
+# 1. Ignore EVERYTHING in this directory
+*
+
+# 2. OVERRIDE and track the specific folders we want
+!hypr/
+!waybar/
+!kitty/
+
+# 3. OVERRIDE and track the specific files we want
+!README.md
+!.gitignore
+
+# 4. EXPLICITLY UN-IGNORE THE CONTENTS of the tracked folders
+!hypr/*
+!waybar/*
+!kitty/*
